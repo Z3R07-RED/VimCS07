@@ -8,17 +8,16 @@ Requisitos previos
 ======
 Antes de ejecutar la herramienta, es necesario instalar las siguientes utilidades a nivel de sistema:
 
-```bash
+```
 apt install vim git python python2 -y
 ```
-```bash
+```python
 pip install flake8
 ```
 Una vez instalado, podrás continuar en el siguiente punto.
 
-```bash
-git clone
-```
+`git clone https://github.com/Z3R07-RED/VimCS07.git`
+
 ¿Cómo ejecuto la herramienta?
 ======
 
@@ -56,10 +55,22 @@ puede cambiar el tema con el siguiente comando:
 En el editor `vim` presione la tecla `ESC` luego ejecute `:colorscheme snazzy`
 tambien puede `:colorscheme` luego presione la tecla `TAB` para que se muestren todos los temas disponibles.
 
-DESINSTALAR la Configuración:
+Uso del editor:
+======
+- Tecla `ESC` + `F2` abre una ventana con los archivos y directorios disponibles.
+- Tecla `F3` esconde o muestra los números de líneas de un archivo.
+- Tecla `ESC` + `F9` abre una ventana y muestra todas las funciones y variables del archivo.
+- Tecla `ESC` + `F7` Nueva ventana derecha.
+- Tecla `ESC` + `F8` Nueva ventana abajo.
+- Tecla `ESC` + `Ctrl+B` buffers derecha.
+- Tecla `ESC` + `Ctrl+G` buffers izquierda.
+
+Mas en: `~/.vimrc` para ver todas las configuraciones.
+
+Desinstalar la Configuración:
 ======
 
-```bash
+```
 cd VimCS07/
 ./uninstall.sh
 ```
