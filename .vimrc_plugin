@@ -1,0 +1,54 @@
+set nocompatible              " be iMproved, required
+syntax on                     " required
+set nowrap
+set encoding=utf8
+filetype off                  " required
+
+"""" START Vundle Configuration
+" Disable filetypefor vundle
+" set the runtime path to include Vundle and initialize
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" (*) Aqui agregamos las líneas <Plugin> para incorporar nuevos plugins a Vim
+
+" Utility
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+"Plugin 'edkolev/tmuxline.vim'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'nvie/vim-flake8'
+Bundle 'majutsushi/tagbar'
+Plugin 'kien/ctrlp.vim'
+"Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'itchyny/vim-cursorword'
+Plugin 'godlygeek/tabular'
+Plugin 'ervandew/supertab'
+"Plugin 'townk/vim-autoclose'
+Plugin 'raimondi/delimitmate'
+
+
+" Theme / Interface
+Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" Theme / Interface
+Plugin 'connorholyday/vim-snazzy'
+Plugin 'ajh17/Spacegray.vim'
+Plugin 'colepeters/spacemacs-theme.vim'
+
+" Git Support
+Plugin 'airblade/vim-gitgutter'
+
+" All of your Plugins must be added before the following line
+call vundle#end() " required
+filetype plugin indent on " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+
+

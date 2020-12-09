@@ -1,0 +1,10 @@
+vim.log
+
+# Other files and folders
+.settings/
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
