@@ -84,6 +84,11 @@ else
 	chmod +x banner/VimCS07
 	source banner/VimCS07
 fi
+if [[ -f "uninstall.sh" && -x "uninstall.sh" ]]; then
+    sleep 0.1
+else
+    chmod +x uninstall.sh
+fi
 sleep 1
 echo -e "${Y}[${G}+${Y}] INSTALACION DE FLACKE8 ...${W}"
 echo ""

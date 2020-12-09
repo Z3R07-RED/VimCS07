@@ -11,25 +11,25 @@ Antes de ejecutar la herramienta, es necesario instalar las siguientes utilidade
 ```
 apt install vim git python python2 -y
 ```
-```python
+```
 pip install flake8
 ```
-Una vez instalado, podrás continuar en el siguiente punto.
+Una vez instalado, podrás continuar con el siguiente punto.
 
 `git clone https://github.com/Z3R07-RED/VimCS07.git`
 
 ¿Cómo ejecuto la herramienta?
 ======
 
-```bash
+```
 cd VimCS07/
 ```
 
-```bash
+```
 chmod +x install.sh
 ```
 
-```bash
+```
 ./install.sh
 ```
 
@@ -72,6 +72,7 @@ Desinstalar la Configuración:
 
 ```
 cd VimCS07/
+chmod +x uninstall.sh
 ./uninstall.sh
 ```
 
