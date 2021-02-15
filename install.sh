@@ -17,26 +17,57 @@ termux_path="/data/data/com.termux/files/usr/bin"
 kali_linux_path="/usr/bin"
 program_name="VimCS07"
 author="Z3R07-RED"
-version="0.1"
+version="1.0.0"
 vimrc=".vimrc"
 vimrc_plugin=".vimrc_plugin"
 colors_tmes="colors"
 dir_plugin="plugin"
 PWD=$(pwd)
+ZEROAPT=""
 
 #FUNCTIONS:
-function ncurses_utils(){
+function termux_dependencies(){
 if [ ! "$(command -v tput)" ]; then
 	echo -e "\n${Y}[I]${W} apt install ncurses-utils ...${W}"
 	apt install ncurses-utils -y > /dev/null 2>&1
 	sleep 1
+fi
+
+if [ ! "$(command -v python)" ]; then
+    echo -e "\n${Y}[I]${W} apt install python -y ${W}"
+    apt install python -y
+    sleep 1
+fi
+
+if [ ! "$(command -v ctags)" ]; then
+    echo -e "\n${Y}[I]${W} apt install ctags -y ${W}"
+    apt install ctags -y
+    sleep 1
+fi
+}
+
+function kali_dependencies(){
+if [ ! "$(command -v python3)" ]; then
+    echo -e "\n${Y}[I]${W} apt-get install python3 ${W}"
+    apt-get install python3 -y
+    sleep 1
+fi
+
+if [ ! "$(command -v ctags)" ]; then
+    echo -e "\n${Y}[I]${W} apt-get install exuberant-ctags -y ${W}"
+    apt-get install exuberant-ctags -y
+    sleep 1
 fi
 }
 
 # dependencies
 function dependencies(){
 if [[ -d "$termux_path" ]]; then
-	ncurses_utils
+	termux_dependencies
+    ZEROAPT="apt"
+elif [[ -d "$kali_linux_path" ]]; then
+    kali_dependencies
+    ZEROAPT="apt-get"
 fi
 tput civis; counter_dn=0
 echo $(clear);sleep 0.3
@@ -49,7 +80,7 @@ echo ""
 sleep 0.2
 spinner=("${Y}||" "${Y}//" "${Y}--" "${Y}OK")
 spinner2=("${Y}||" "${Y}//" "${Y}--" "${R}..")
-dependencies=(vim python python2 git ctags fzf curl wget) # dependencies
+dependencies=(vim python2 git fzf curl wget) # dependencies
 for program in "${dependencies[@]}"; do
     if [ ! "$(command -v $program)" ]; then
 		for SPMP in ${spinner2[@]}; do
@@ -61,7 +92,7 @@ for program in "${dependencies[@]}"; do
         let counter_dn+=1
 		echo -e "${Y}[i]${C} INSTALLING $program ${W}...${W}"
 		echo ""
-		apt install $program -y
+		$ZEROAPT install $program -y
 		echo ""
 	else
 		for SPMP in ${spinner[@]}; do
@@ -92,7 +123,11 @@ fi
 sleep 1
 echo -e "${Y}[${G}+${Y}] INSTALACION DE FLACKE8 ...${W}"
 echo ""
-pip install flake8
+if [[ -d "$termux_path" ]]; then
+    pip install flake8
+elif [[ -d "$kali_linux_path" ]]; then
+    pip3 install flake8
+fi
 sleep 0.5
 printf "\n${Y}[${C}*${Y}]${G} Configurando vim...${W}\n"
 sleep 0.3

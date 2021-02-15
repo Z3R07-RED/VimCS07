@@ -8,17 +8,47 @@ Requisitos previos
 ======
 Antes de ejecutar la herramienta, es necesario instalar las siguientes utilidades a nivel de sistema:
 
+* Instalar en Termux:
 ```
-apt install vim git python python2 -y
+apt install git -y
+```
+```
+apt install python -y
+```
+```
+apt install python2 -y
+```
+```
+apt install ctags -y
 ```
 ```
 pip install flake8
 ```
+
+* Instalar en Ubuntu o kali linux:
+```
+apt-get install git -y
+```
+```
+apt-get install python2 -y
+```
+```
+apt-get install python3 -y
+``
+```
+apt-get install exuberant-ctags
+```
+```
+pip3 install flake8
+```
+
 Una vez instalado, podrás continuar con el siguiente punto.
 
-`git clone https://github.com/Z3R07-RED/VimCS07.git`
+```
+git clone https://github.com/Z3R07-RED/VimCS07.git
+```
 
-¿Cómo ejecuto la herramienta?
+¿Cómo instalado la herramienta?
 ======
 
 ```
@@ -54,6 +84,7 @@ puede cambiar el tema con el siguiente comando:
 
 En el editor `vim` presione la tecla `ESC` luego ejecute `:colorscheme snazzy`
 tambien puede `:colorscheme` luego presione la tecla `TAB` para que se muestren todos los temas disponibles.
+para ver todos los colores más detallado ejecute `:menu`
 
 Uso del editor:
 ======
@@ -64,6 +95,7 @@ Uso del editor:
 - Tecla `ESC` + `F8` Nueva ventana abajo.
 - Tecla `ESC` + `Ctrl+B` buffers derecha.
 - Tecla `ESC` + `Ctrl+G` buffers izquierda.
+- Tecla `ESC` + `Ctrl+p` buscar archivos.
 
 Mas en: `~/.vimrc` para ver todas las configuraciones.
 

@@ -46,11 +46,14 @@ Plugin 'godlygeek/tabular'
 Plugin 'ervandew/supertab'
 "Plugin 'townk/vim-autoclose'
 Plugin 'raimondi/delimitmate'
+Plugin 'Yggdroot/indentLine'
+Plugin 'xuyuanp/nerdtree-git-plugin'
 
 
 " Theme / Interface
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+" Plugin 'ryanoasis/vim-devicons'
 
 " Theme / Interface
 Plugin 'connorholyday/vim-snazzy'
@@ -116,6 +119,7 @@ set splitright
 " Theme and Styling
 set t_Co=256
 set background=dark
+set termguicolors
 colorscheme spacegray     " snazzy o tir_black o spacegray o turbocpp
 
 " SNAZZY THEME TRANSPARENT ...
@@ -252,3 +256,10 @@ highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 "    \ 'right' : '',
 "    \ 'right_alt' : '|',
 "    \ 'space' : ' '}
+
+" Plugin indentLine
+let g:indentLine_defaultGroup = 'SpecialKey'
+" let g:indentLine_setColors = 0
+let g:indentLine_fileTypeExclude = ['text', 'sh', 'help', 'terminal']
+let g:indentLine_bufNameExclude = ['NERD_tree.*', 'term:.*']
+" let g:indentLine_char_list = ['|', '¦', '┆', '┊']

@@ -31,6 +31,8 @@ Plugin 'godlygeek/tabular'
 Plugin 'ervandew/supertab'
 "Plugin 'townk/vim-autoclose'
 Plugin 'raimondi/delimitmate'
+Plugin 'Yggdroot/indentLine'
+Plugin 'xuyuanp/nerdtree-git-plugin'
 
 
 " Theme / Interface
