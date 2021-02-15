@@ -34,7 +34,7 @@ apt-get install python2 -y
 ```
 ```
 apt-get install python3 -y
-``
+```
 ```
 apt-get install exuberant-ctags
 ```
