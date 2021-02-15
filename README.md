@@ -48,7 +48,7 @@ Una vez instalado, podrás continuar con el siguiente punto.
 git clone https://github.com/Z3R07-RED/VimCS07.git
 ```
 
-¿Cómo instalado la herramienta?
+¿Cómo Instalar la herramienta?
 ======
 
 ```
@@ -97,7 +97,7 @@ Uso del editor:
 - Tecla `ESC` + `Ctrl+G` buffers izquierda.
 - Tecla `ESC` + `Ctrl+p` buscar archivos.
 
-Mas en: `~/.vimrc` para ver todas las configuraciones.
+Mas en `~/.vimrc` para ver todas las configuraciones.
 
 Desinstalar la Configuración:
 ======
