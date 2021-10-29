@@ -120,10 +120,10 @@ set splitright
 set t_Co=256
 set background=dark
 set termguicolors
-colorscheme spacegray     " snazzy o tir_black o spacegray o turbocpp
-
 " SNAZZY THEME TRANSPARENT ...
 "let g:SnazzyTransparent = 1
+colorscheme snazzy     " snazzy o tir_black o spacegray o turbocpp
+
 
 
 " Save folds
@@ -172,7 +172,7 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:airline_theme='atomic'        " o 'cool' o 'hybridline' o 'simple' o 'atomic'
+let g:airline_theme='simple'        " o 'cool' o 'hybridline' o 'simple' o 'atomic'
 
 " mover a la división de abajo
 nnoremap <C-J> <C-W><C-J>
