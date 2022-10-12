@@ -38,7 +38,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Bundle 'majutsushi/tagbar'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'itchyny/vim-cursorword'
@@ -53,6 +53,7 @@ Plugin 'xuyuanp/nerdtree-git-plugin'
 " Theme / Interface
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'ap/vim-css-color'
 " Plugin 'ryanoasis/vim-devicons'
 
 " Theme / Interface
