@@ -32,22 +32,25 @@ Plugin 'VundleVim/Vundle.vim'
 " (*) Aqui agregamos las líneas <Plugin> para incorporar nuevos plugins a Vim
 
 " Utility
-Plugin 'scrooloose/nerdtree'
+Plugin 'preservim/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 "Plugin 'edkolev/tmuxline.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
-Bundle 'majutsushi/tagbar'
+Plugin 'preservim/tagbar'
 Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'itchyny/vim-cursorword'
 Plugin 'godlygeek/tabular'
+" vim-markdown requiere tabular
+" Plugin 'preservim/vim-markdown'
 Plugin 'ervandew/supertab'
 "Plugin 'townk/vim-autoclose'
 Plugin 'raimondi/delimitmate'
 Plugin 'Yggdroot/indentLine'
 Plugin 'xuyuanp/nerdtree-git-plugin'
+Plugin 'Z3R07-RED/tpll-vim'
 
 
 " Theme / Interface
@@ -58,8 +61,8 @@ Plugin 'ap/vim-css-color'
 
 " Theme / Interface
 Plugin 'connorholyday/vim-snazzy'
-Plugin 'ajh17/Spacegray.vim'
-Plugin 'colepeters/spacemacs-theme.vim'
+" Plugin 'vim-scripts/Spacegray.vim'
+" Plugin 'colepeters/spacemacs-theme.vim'
 
 " Git Support
 Plugin 'airblade/vim-gitgutter'
@@ -123,7 +126,7 @@ set background=dark
 set termguicolors
 " SNAZZY THEME TRANSPARENT ...
 "let g:SnazzyTransparent = 1
-colorscheme snazzy     " snazzy o tir_black o spacegray o turbocpp
+colorscheme snazzy     " snazzy o tir_black o turbocpp
 
 
 
@@ -264,3 +267,9 @@ let g:indentLine_defaultGroup = 'SpecialKey'
 let g:indentLine_fileTypeExclude = ['text', 'sh', 'help', 'terminal']
 let g:indentLine_bufNameExclude = ['NERD_tree.*', 'term:.*']
 " let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
+" Plugin tpll-vim
+autocmd BufNewFile *.html 0r ~/.vim/bundle/tpll-vim/templates/html.tpl
+autocmd BufNewFile *.php 0r ~/.vim/bundle/tpll-vim/templates/php.tpl
+autocmd BufNewFile *.py 0r ~/.vim/bundle/tpll-vim/templates/python.tpl
+autocmd BufNewFile *.sh 0r ~/.vim/bundle/tpll-vim/templates/bash.tpl

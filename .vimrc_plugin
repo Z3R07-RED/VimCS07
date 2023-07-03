@@ -17,22 +17,25 @@ Plugin 'VundleVim/Vundle.vim'
 " (*) Aqui agregamos las líneas <Plugin> para incorporar nuevos plugins a Vim
 
 " Utility
-Plugin 'scrooloose/nerdtree'
+Plugin 'preservim/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 "Plugin 'edkolev/tmuxline.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
-Bundle 'majutsushi/tagbar'
-Plugin 'kien/ctrlp.vim'
+Bundle 'preservim/tagbar'
+Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'itchyny/vim-cursorword'
 Plugin 'godlygeek/tabular'
+" vim-markdown requiere tabular
+" Plugin 'preservim/vim-markdown'
 Plugin 'ervandew/supertab'
 "Plugin 'townk/vim-autoclose'
 Plugin 'raimondi/delimitmate'
 Plugin 'Yggdroot/indentLine'
 Plugin 'xuyuanp/nerdtree-git-plugin'
+Plugin 'Z3R07-RED/tpll-vim'
 
 
 " Theme / Interface
@@ -42,8 +45,8 @@ Plugin 'ap/vim-css-color'
 
 " Theme / Interface
 Plugin 'connorholyday/vim-snazzy'
-Plugin 'ajh17/Spacegray.vim'
-Plugin 'colepeters/spacemacs-theme.vim'
+" Plugin 'ajh17/Spacegray.vim'
+" Plugin 'colepeters/spacemacs-theme.vim'
 
 " Git Support
 Plugin 'airblade/vim-gitgutter'
