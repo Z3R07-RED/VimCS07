@@ -60,7 +60,7 @@ chmod +x install.sh
 ```
 
 ```
-./install.sh
+bash install.sh
 ```
 
 La instalación puede tardar unos segundos.
@@ -105,7 +105,7 @@ Desinstalar la Configuración:
 ```
 cd VimCS07/
 chmod +x uninstall.sh
-./uninstall.sh
+bash uninstall.sh
 ```
 
 Muy simple verdad? ...
